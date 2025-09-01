@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Poppins:wght@200&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet" />
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header>
+    
+        <div class="container">
+            <nav class="flex items-centre justify-between">
+                <div class="left flex justfiy-right">
+                    <div>
+                        <a href="#inicio">Início</a>
+                        <a href="#sobre-mim">Sobre Mim</a>
+                        <a href="#portfolio">Portfólio</a>
+                        <a href="#formacao">Formação</a>
+                    </div>
+                <div class="right"> <a href="#contato" class="btn btn-primary">Contato</a> </div>
+            </nav>
+        </div>
+    </header>
+
+<div id="inicio" class="hero flex items-centre justify-between">
+            <div class="left flex-1 justify-center">
+                <img src="images/erik.jpg"/>
+            </div>
+            <div class="right flex-1">
+                <h1>
+                    Eu sou Erik<br />
+                    <span>Estudante e Desenvolvedor</span>
+                </h1>
+                <p>
+                    Apaixonado por transformar ideias em realidade através da tecnologia. 
+                    Como estudante de Análise e Desenvolvimento de Sistemas, meu objetivo é construir experiências digitais intuitivas e visualmente atraentes, utilizando HTML, CSS e JavaScript. 
+                    Navegue pelo meu portfólio para conhecer meu trabalho e minhas habilidades.
+                </p>
+                <div>
+                    <a href="arquivos/Profile.pdf" download class="btn btn-secondary">DOWNLOAD CV</a>
+                </div>
+            </div>
+        </div>
+    <section class="about hidden" id="sobre-mim">
+        <div class="container flex items-centre">
+            <div class="left flex-1 justify-right">
+                <img src="images/social.jpg"
+                    height="400px" alt="profile pic" />
+        </div>
+        <div class="right flex-1">
+                <h1>Sobre <span>Mim</span></h1>
+                <h3>Olá! Eu sou o Erik.</h3>
+                <p>
+                    Desde o meu primeiro 'Hello, World!', soube que queria criar soluções através do código. 
+                    Atualmente, como estudante de Análise e Desenvolvimento de Sistemas na UNINTER, mergulho no universo do desenvolvimento web, buscando sempre a combinação perfeita entre um design funcional e um código limpo. 
+                    Para mim, programar é resolver quebra-cabeças e dar vida a projetos criativos.
+                    Fora do mundo do código, você pode me encontrar jogando basquete, explorando trilhas ou imerso em um bom jogo online. 
+                    Estou animado para aplicar meu conhecimento em projetos desafiadores e continuar crescendo como desenvolvedor."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services hidden" id="portfolio">
+        <div class="container">
+            <h1 class="services-head">Portfólio</h1>
+            <p>Projetos que desenvolvi durante o curso.</p>
+            <div class="card-grid">
+                <a href="https://github.com/zeuxsin/Uninter-projeto1" target="_blank">
+                    <div class="card">
+                        <h2>Página de Apresentação</h2>
+                        <p>
+                            Este projeto é uma página web pessoal desenvolvida com HTML, CSS e JavaScript, criada como exercício de aprendizado. 
+                            A página contém informações pessoais, hobbies, países que deseja visitar e uma interação simples com JavaScript.
+                        </p>
+                    </div>
+                </a>
+                <a href="https://github.com/zeuxsin/Portfolio" target="_blank">
+                    <div class="card">
+                        <h2>Página Portfolio</h2>
+                        <p>
+                            Criação de um site de portfólio responsivo de página única para a disciplina de Fundamentos da Programação Web. 
+                            O projeto foi desenvolvido do zero, focando em um design limpo e interações dinâmicas com JavaScript.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="about hidden" id="formacao">
+    <div class="container flex items-centre">
+        <div class="left flex-1 justify-right">
+        </div>
+        <div class="right flex-1">
+            <h1>Minha <span>Formação</span></h1>
+            <h3>Educação e Idiomas</h3>
+            <p>
+                Atualmente estou cursando Análise e Desenvolvimento de Sistemas na UNINTER, 
+                com foco em desenvolvimento web e mobile. Tenho conhecimento em diversas 
+                tecnologias aprendidas durante o curso e em projetos pessoais.
+                <br><br>
+                <b>Idiomas:</b> Português (Nativo) e Inglês (Avançado).
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="contato" class="hidden">
+    <div class="container">
+        <h1 class="services-head">Entre em Contato</h1>
+        <p>Sinta-se à vontade para me enviar uma mensagem.</p>
+
+        <form action="https://formspree.io/f/mdkldovz" method="POST">
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+        </form>
+    </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
